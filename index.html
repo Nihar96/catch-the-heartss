@@ -1,0 +1,43 @@
+<!--
+File: index.html
+A playful romantic "Catch the Hearts" mini-game with full intro, advanced animations, and dynamic spawn patterns.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catch the Hearts!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background Music: absolute path -->
+  <audio id="bgMusic" src="C:/Users/racky/Downloads/CatchTheHeart/round_and_round.mp3" loop></audio>
+
+  <!-- Intro Screen -->
+  <div id="intro-screen" class="screen">
+    <h2><span class="panda">🐼</span> Hey Pahi, bored? Wanna some refreshment?</h2>
+    <button id="intro-button">Click Here</button>
+  </div>
+
+  <!-- Info Screen -->
+  <div id="info-screen" class="screen hidden">
+    <h2>🌹 Nihar sent you his hearts, let’s see how many you can catch!</h2>
+    <button id="start-button">Start Game</button>
+  </div>
+
+  <!-- Game Screen -->
+  <div id="game-screen" class="screen hidden">
+    <div class="game-container">
+      <h1>Catch the Hearts!</h1>
+      <div id="score">Score: 0</div>
+      <div id="game-area"></div>
+      <div id="message"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
